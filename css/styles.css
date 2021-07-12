@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+body
+{
+    margin: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+    background-position:-35vh -30vw , 50vw 50vh ;
+    background-repeat: no-repeat,no-repeat;
+    background-color: hsl(185, 75%, 39%);
+    
+}
+
+@media screen and (max-width:425px) {
+    body
+    {
+        background-position: -75vh -100vw , 50vw 50vh;
+    }    
+}
+
+.main-container
+{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card-container
+{
+    background-color: white;
+    border-radius: 10px;
+    min-width: 20rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1.5fr 0.5fr;
+    grid-template-areas: 
+        "bg"
+        "img"
+        "text";
+}
+
+.bg
+{
+    background-image: url(../images/bg-pattern-card.svg);
+    border-radius: 10px 10px 0 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg img
+{
+    border-radius: 50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    position: absolute;
+}
+
+.img-name
+{
+    transform: translateY(50%);
+    margin-bottom: 30px;
+}
+
+
+.name
+{
+    font-size: 1.125rem;
+    text-align: center;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+    margin-bottom: 10px;
+}
+
+.age, .place
+{
+    text-align: center;
+    font-weight: 700;
+    color: hsl(0, 0%, 59%);
+}
+
+.place
+{
+    margin-top: 0;
+}
+
+.stats
+{
+    border-top: 2px solid hsla(0, 0%, 59%,0.1);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+
+.followers
+{
+   text-align: center;
+   margin: 5%;
+   
+}
+
+.stats-no
+{
+    margin-bottom: 5px;
+}
+
+.stats-text
+{
+    margin-top: 0;
+    font-size: 0.675rem;
+    color: hsl(0, 0%, 59%);
+    letter-spacing: 1px;
+}
